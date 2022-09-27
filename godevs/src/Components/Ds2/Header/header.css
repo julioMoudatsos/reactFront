@@ -1,0 +1,132 @@
+/* HEADER */
+header{
+  background-color: tomato;
+
+}
+
+/* MENU */
+.menu{
+  background-color: white;
+
+  box-shadow: 0px 2px 8px rgba(53, 49, 49, 0.226), 0px 5px 8px rgba(51, 51, 51, 0.126);
+  width: 35vh;
+  position: fixed;
+  min-height: 100vh;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 20px;
+  top: 0;
+
+    transform: translateX(-2000px);
+    transition: .3s ease-in-out;
+  
+z-index: 200;
+}
+.menuMobile{
+  display: none;
+}
+.menu h1{
+  font-size: 35px;
+  font-weight: bold;
+  color: #333;
+  letter-spacing: 1px;
+  margin-left: 10px;
+}
+
+.menu ul{
+  height: auto; 
+}
+
+.menu ul a{
+  display: block;
+  margin-top: 45px;
+  font-size:18px;
+  font-weight: 500;
+  cursor: pointer;
+  color: #333;
+  padding: 10px ;
+  width: 100%;
+  transition: .3s;
+}
+.menu ul li{
+  transition: .3s;
+  width: 110px;
+
+}
+.menu ul li a.active{
+  background-color: #fb1;
+  width: 170px;
+} 
+.menu ul a.active{
+
+  border-radius: 0px 5px 5px 0px;
+}
+/* PESQUISA */
+.pesquisa{
+  background: white;
+  box-shadow: 5px 0px 5px #333;
+  margin-left:0 ;
+  padding: 0px 40px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  width: 100% !important;
+  z-index: 101;
+}
+.menuMobile{
+  display: block;
+  height: 2px;
+  width: 22px;
+  background-color: #333;
+  box-shadow: 0px 5px 0px #333,0px -5px 0px #333;
+  margin-right: 35px;
+  z-index: 200;
+}
+.linkmobile{
+  cursor: pointer !important;
+  display: block;
+  padding: 10px;
+}
+form{
+ 
+  width: 80%;
+}
+.pesquisa form input{
+width: 70%;
+border-style: none;
+outline: none;
+padding-bottom: 5px;
+border-bottom: 2px solid rgba(51, 51, 51, 0.089);
+}
+.menu.ativar{
+  transform: translateX(0px);
+}
+/* MOBILE */
+@media only screen and (max-width: 575px) {
+  .menu{
+    transform: translateX(-2000px);
+    transition: .3s ease-in-out;
+  }
+  
+  .pesquisa{
+    width: 100%;
+    margin-left: 0px;
+  }
+  .pesquisa p{
+   
+    width: 120px;
+    font-size: 14px;
+  }
+  .pesquisa a{
+
+    padding: 10px;
+  }
+ 
+
+
+
+ 
+}
