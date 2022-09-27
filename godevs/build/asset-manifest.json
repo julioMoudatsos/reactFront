@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/static/css/main.66a761e3.css",
+    "main.js": "/static/js/main.260e6937.js",
+    "static/media/linkedin.png": "/static/media/linkedin.c02ff75236dc919c2f85.png",
+    "static/media/champion.svg": "/static/media/champion.8849fe1af1ce471c327419776a02fef6.svg",
+    "static/media/you.png": "/static/media/you.3046e6ada3b579b1049d.png",
+    "static/media/investigation.png": "/static/media/investigation.e2e8e04a1c2cea1cbb59.png",
+    "static/media/csslogo.jpg": "/static/media/csslogo.86ea90919c3f33faa467.jpg",
+    "static/media/grafico.png": "/static/media/grafico.19278e682d5dcec98b58.png",
+    "static/media/crescimento.png": "/static/media/crescimento.1ed6596af56dd180d9b7.png",
+    "static/media/infla.png": "/static/media/infla.cdc0a1adc16893bc16a3.png",
+    "static/media/springlogo.png": "/static/media/springlogo.451a1f58ef7098840d45.png",
+    "static/media/angularlogo.jpg": "/static/media/angularlogo.52921e6bbd561b3c2f94.jpg",
+    "static/media/logoReact.png": "/static/media/logoReact.367a8df5ba9c7a95160e.png",
+    "static/media/htmlLogo.png": "/static/media/htmlLogo.f91b1edc50a08df6edb3.png",
+    "static/media/bonecoDinheiro.png": "/static/media/bonecoDinheiro.34f21a552c3fa82c2214.png",
+    "index.html": "/index.html",
+    "main.66a761e3.css.map": "/static/css/main.66a761e3.css.map",
+    "main.260e6937.js.map": "/static/js/main.260e6937.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.66a761e3.css",
+    "static/js/main.260e6937.js"
+  ]
+}
