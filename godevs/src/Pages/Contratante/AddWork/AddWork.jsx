@@ -1,12 +1,11 @@
 import DashboardContratante from '../../../Components/Dashboard/DashboardContratante';
 import Grid from '@mui/material/Grid';
-import React, { useState, useEffect } from 'react';
-import { TextField, Typography, Link, Button } from "@mui/material";
+import React, { useState } from 'react';
+import { TextField, Button } from "@mui/material";
 import MobileDatePicker from '@mui/lab/MobileDatePicker';
 import AdapterDateFns from '@mui/lab/AdapterDateFns';
 import MenuItem from '@mui/material/MenuItem';
 import Select from '@mui/material/Select';
-import InputMask from 'react-input-mask';
 import FormControl from '@mui/material/FormControl';
 import InputLabel from '@mui/material/InputLabel';
 import LocalizationProvider from '@mui/lab/LocalizationProvider';
@@ -145,7 +144,7 @@ export default function AddWork() {
 
                     </div>
                     <div style={{ width: "50%", display: "flex", justifyContent: "center", alignItems: "center" }}>
-                        <img style={{ width: "75%", marginTop: "-25px" }} src={investigation} />
+                        <img style={{ width: "75%", marginTop: "-25px" }} alt='' src={investigation} />
                     </div>
                 </div>
             </DashboardContratante>

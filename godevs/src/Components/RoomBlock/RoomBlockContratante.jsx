@@ -1,4 +1,4 @@
-import { Component, useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import Typography from '@mui/material/Typography';
 import InfoUserService from '../../Services/InfoUserService';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
@@ -6,11 +6,14 @@ import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 export default function RoomBlockContratante(props) {
     const [nome, setNome] = useState();
     const [idContratado] = useState(props.item.fk_contratado);
-    useEffect(async () => {
-        const service = new InfoUserService();
-        await service.getContratadoById(idContratado)
-        setNome(service.state.res.data.nome)
-    }, []);
+    useEffect(() => {
+        async function fetchData(){
+            const service = new InfoUserService();
+            await service.getContratadoById(idContratado)
+            setNome(service.state.res.data.nome)
+        }
+        fetchData()
+    }, [idContratado]);
     return (
         <>
             <div

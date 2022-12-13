@@ -1,10 +1,6 @@
 import Dashboard from '../../../Components/Dashboard/Dashboard';
 import Grid from '@mui/material/Grid';
 import React, { useState, useEffect } from 'react';
-import MenuItem from '@mui/material/MenuItem';
-import Select from '@mui/material/Select';
-import FormControl from '@mui/material/FormControl';
-import InputLabel from '@mui/material/InputLabel';
 import WorkService from '../../../Services/WorkService';
 import WorkBlockHistoryDev from '../../../Components/WorkBlockHistoryDev/WorkBlockHistoryDev';
 
@@ -21,7 +17,7 @@ export default function HistoryDev() {
                 }
             }
         load();
-    }, []);
+    }, [idCont]);
 
     return (
         <>

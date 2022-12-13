@@ -22,7 +22,6 @@ import ManIcon from '@mui/icons-material/Man';
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
 import { Link } from 'react-router-dom';
 import useMediaQuery from '@mui/material/useMediaQuery';
-import MessageIcon from '@mui/icons-material/Message';
 import QuizIcon from '@mui/icons-material/Quiz';
 import WorkIcon from '@mui/icons-material/Work';
 import '../../Assets/global.scss';
@@ -62,11 +61,6 @@ function DashboardContent(props) {
       title: 'Meu Perfil',
       link: '/dev/profile',
       icon: <ManIcon />,
-    },
-    {
-      title: 'Mensagens',
-      link: '/dev/mensagens',
-      icon: <MessageIcon />,
     },
     {
       title: 'Histórico',

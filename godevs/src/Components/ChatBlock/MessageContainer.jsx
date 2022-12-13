@@ -1,6 +1,6 @@
 import { useEffect, useRef } from 'react';
 
-const MessageContainer = ({ messages, nome, myName }) => {
+const MessageContainer = ({ messages, myName }) => {
     const messageRef = useRef();
 
     useEffect(() => {
@@ -12,7 +12,7 @@ const MessageContainer = ({ messages, nome, myName }) => {
 
     return <div ref={messageRef} style={{display: "flex" , overflow: "auto", flexDirection: "column"}} className='message-container' >
         {messages.map((m, index) => {
-            if (m.user == myName) {
+            if (m.user === myName) {
                 return <div key={index} style={{alignSelf: "flex-end", marginRight: "20px"}}>
                     <p style={{}}>{m.message}</p>
                     <p style={{textAlign: "right",fontSize: "0.7em"}}>{m.user}</p>

@@ -1,16 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import InfoUserService from '../../Services/InfoUserService';
-import { InfoUser } from '../PerfilUser/InfoUser/InfoUser';
 import './ata.css';
 import { MiniAta } from './MiniAta';
 export const AtaDev = () => {
   const [infoUser, setInfoUser] = useState([]);
-  const [infoAta, setInfoAta] = useState(null);
   const [infook, setInfook] = useState(false);
-  let [contador, setContador] = React.useState(0);
   const [id] = useState(localStorage.getItem('id'));
-  const [download, setDownload] = React.useState(false);
-  const [count, setCount] = React.useState(0);
   const [carregar, setCarregar] = React.useState(true);
 
   // eslint-disable-next-line react-hooks/exhaustive-deps

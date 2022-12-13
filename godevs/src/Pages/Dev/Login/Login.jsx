@@ -2,7 +2,6 @@ import { TextField, Typography, Link, Button } from '@mui/material';
 import FormPage from '../../../Components/Form/Form';
 import LoginIcon from '@mui/icons-material/Login';
 import * as React from 'react';
-import Alert from '@mui/material/Alert';
 import './login.scss';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import { AuthContext } from '../../../Context/AuthContext';

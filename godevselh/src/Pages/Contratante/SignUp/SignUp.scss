@@ -1,0 +1,50 @@
+section {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+}
+.right {
+    width: 45vw;
+    height: 100vh;
+    display: flex;
+    float: left;
+    justify-content: center;
+    align-items: center;
+}
+
+.form {
+    display: flex;
+    width: 480px;
+    margin-left: 20px;
+    margin-right: 20px;
+    flex-direction: column;
+}
+
+.fields {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+}
+
+.voltar {
+    align-self: flex-start;
+    left: 55vw;
+    position: absolute;
+}
+
+@media (max-width: 920px)
+{
+  .right
+   {
+    width: 100vw;
+   }
+
+   .voltar{
+    left:0;
+   }
+   .form {
+    width: 380px;
+    margin-left: 20px;
+    margin-right: 20px;
+   }
+}

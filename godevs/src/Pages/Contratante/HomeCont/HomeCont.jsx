@@ -1,6 +1,6 @@
 import DashboardContratante from '../../../Components/Dashboard/DashboardContratante';
 import Grid from '@mui/material/Grid';
-import { TextField, Typography, Link, Button } from "@mui/material";
+import { Button } from "@mui/material";
 
 export default function HomeCont() {
     return (

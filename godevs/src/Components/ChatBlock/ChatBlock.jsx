@@ -1,6 +1,5 @@
-import { TextField, Typography, Link, Button } from "@mui/material";
-import InfoContrantanteService from '../../Services/InfoContratanteService';
-import { Component, useEffect, useState } from 'react';
+import { TextField, Button } from "@mui/material";
+import { useEffect, useState } from 'react';
 import SendMessageForm from './SendMessageForm';
 import MessageContainer from './MessageContainer';
 import ChatService from "../../Services/ChatService";
@@ -9,7 +8,7 @@ import MenuItem from '@mui/material/MenuItem';
 import CloseIcon from '@mui/icons-material/Close';
 
 function Chat({ sendMessage, messages, idUser, users, myName, id_room }) {
-    const [messagesAntigas, setMessagesAntigas] = useState([]);
+    const [setMessagesAntigas] = useState([]);
     const [works, setWorks] = useState([]);
     const [selected, setSelected] = useState("");
     const [aprovado, setAprovado] = useState(false);
@@ -22,18 +21,18 @@ function Chat({ sendMessage, messages, idUser, users, myName, id_room }) {
         async function loadChat() {
             const service = new ChatService();
             await service.getMessageByRoom(id_room);
-            if (service.state.res.status == 200)
+            if (service.state.res.status === 200)
                 setMessagesAntigas(messages => [...messages, service.state.res.data]);
         }
         async function loadWorks() {
             const workService = new WorkService();
             await workService.getWorksByCont(id);
-            if (workService.state.res.status == 200)
+            if (workService.state.res.status === 200)
                 setWorks(workService.state.res.data)
         }
         loadChat();
         loadWorks();
-    }, [id_room])
+    }, [id, id_room, setMessagesAntigas])
     return (
         <div style={{
             backgroundColor: "#D7D7D7", maxHeight: "75vh", height: "75vh", width: "100%", display: "flex", flexDirection: "column",

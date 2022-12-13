@@ -7,7 +7,6 @@ import AdapterDateFns from '@mui/lab/AdapterDateFns';
 import LocalizationProvider from '@mui/lab/LocalizationProvider';
 import Grid from '@mui/material/Grid';
 import './SignUp.scss'
-import Alert from '@mui/material/Alert';
 import InputMask from 'react-input-mask';
 import MobileDatePicker from '@mui/lab/MobileDatePicker';
 import SignUpService from "../../../Services/SignUpService";

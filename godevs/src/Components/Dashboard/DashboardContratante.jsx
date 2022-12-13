@@ -59,11 +59,6 @@ function DashboardContent(props) {
       icon: <ManIcon />,
     },
     {
-      title: 'Mensagens',
-      link: '/cont/mensagens',
-      icon: <MessageIcon />,
-    },
-    {
       title: 'Atas',
       link: '/cont/atacontratante',
       icon: <MessageIcon />,

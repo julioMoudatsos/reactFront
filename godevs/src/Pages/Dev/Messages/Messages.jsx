@@ -1,6 +1,6 @@
 import { Grid } from '@mui/material';
 import { HubConnectionBuilder, LogLevel } from '@microsoft/signalr';
-import { Component, useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import Dashboard from '../../../Components/Dashboard/Dashboard';
 import RoomBlock from '../../../Components/RoomBlock/RoomBlock';
 import ChatService from '../../../Services/ChatService';
@@ -16,34 +16,7 @@ export default function Messages() {
   const [users, setUsers] = useState();
   const [idRoom, setIdRoom] = useState();
 
-  const joinRoom = async (user, room) => {
-    try {
-      const connection = new HubConnectionBuilder()
-        .withUrl("https://localhost:44382/chat")
-        .configureLogging(LogLevel.Information)
-        .build();
 
-      connection.on("ReceiveMessage", (user, message) => {
-        setMessages(messages => [...messages, { user, message }]);
-      });
-
-      connection.on("UsersInRoom", (users) => {
-        setUsers(users);
-      });
-
-      connection.onclose(e => {
-        setConnection();
-        setMessages([]);
-        setUsers([]);
-      });
-
-      await connection.start();
-      await connection.invoke("JoinRoom", { user, room });
-      setConnection(connection);
-    } catch (e) {
-      console.log(e);
-    }
-  }
   const sendMessage = async (message) => {
     try {
       await connection.invoke("SendMessage", message);
@@ -68,15 +41,16 @@ export default function Messages() {
         setRooms(service.state.res.data)
       }
       loadChats();
-    }, []);
+    }, [id]);
 
     const click = async (name, id) =>{
-      if(connection != undefined){
+      if(connection !== undefined){
         console.log("fechou")
         closeConnection();
     }
       setOutroName(name)
       setIdRoom(id)
+      // eslint-disable-next-line no-undef
       joinRoom(myName,id.toString())
     }
 

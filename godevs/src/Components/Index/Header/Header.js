@@ -11,7 +11,6 @@ export const Header = () => {
     const link = document.querySelector('.teste');
 
     const container = document.querySelector('#' + link.href.split('#')[1]);
-    console.log(container);
 
     link.addEventListener('click', (e) => {
       e.preventDefault();

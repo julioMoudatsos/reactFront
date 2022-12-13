@@ -1,7 +1,6 @@
 import { Grid } from '@mui/material';
 import { HubConnectionBuilder, LogLevel } from '@microsoft/signalr';
-import { Component, useEffect, useState } from 'react';
-import Dashboard from '../../../Components/Dashboard/Dashboard';
+import { useEffect, useState } from 'react';
 import RoomBlockContratante from '../../../Components/RoomBlock/RoomBlockContratante';
 import ChatService from '../../../Services/ChatService';
 import Chat from '../../../Components/ChatBlock/ChatBlock';
@@ -70,10 +69,10 @@ export default function MessagesContratante() {
         setRooms(service.state.res.data)
       }
       loadChats();
-    }, []);
+    }, [id]);
 
     const click = async (name, id, idContratado) =>{
-        if(connection != undefined){
+        if(connection !== undefined){
           console.log("fechou")
           closeConnection();
       }

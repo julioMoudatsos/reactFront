@@ -80,7 +80,7 @@ export const FormQuiz = () => {
     );
     setAcerto(resposta.length);
   }
-
+  
   return (
     <>
       <form

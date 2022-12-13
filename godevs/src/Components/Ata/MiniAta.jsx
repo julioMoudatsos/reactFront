@@ -24,10 +24,6 @@ export const MiniAta = ({ ata }) => {
     setExcluir(true);
     setNexcluir(false);
   }
-  function refazerAta(idata) {
-    setExcluir(false);
-    setNexcluir(true);
-  }
 
   return (
     <>

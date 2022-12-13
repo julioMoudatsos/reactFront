@@ -7,15 +7,12 @@
   padding: 40px 0px;
   min-height: 100vh;
 }
-
 section {
   width: 100%;
 }
-
 img {
   max-width: 100%;
 }
-
 /* Header */
 .headerHome {
   background-color: white !important;
@@ -24,11 +21,9 @@ img {
   align-items: center;
   padding: 0px 20px;
 }
-
 .headerHome div {
   display: none;
 }
-
 .headerHome div::after {
   content: "";
   display: block;
@@ -38,15 +33,10 @@ img {
   box-shadow: 2px;
   box-shadow: 0px 7px 0px #333, 0px -7px 0px #333;
 }
-
 .headerHome h1 {
-  background-color: purple;
-  padding: 20px;
-  border-radius: 10px;
   letter-spacing: 2px;
   font-size: 2.3rem;
 }
-
 .navebarHome ul a {
   margin-left: 65px;
   width: 80%;
@@ -58,18 +48,15 @@ img {
   transition: 0.3s;
   border-bottom: 2px solid transparent;
 }
-
 .navebarHome ul a:hover {
   color: tomato;
   font-weight: bold;
 }
-
 .navebarHome ul a.ativo {
   color: tomato;
   font-weight: bold;
   border-bottom: 2px solid tomato;
 }
-
 /* INTRO */
 .infoIntro {
   display: grid;
@@ -78,7 +65,6 @@ img {
   padding: 0px 20px;
   width: 85%;
 }
-
 .infoIntro p {
   width: 520px;
   font-size: 20px;
@@ -86,21 +72,18 @@ img {
   line-height: 1.4em;
   margin-bottom: 30px;
 }
-
 .infoIntro h6 {
   width: 440px;
   font-size: 15px;
   font-weight: 400;
   margin-bottom: 30px;
 }
-
 .txtintro {
   display: flex;
   justify-content: center;
   flex-direction: column;
   margin-bottom: 25px;
 }
-
 .infoIntro button {
   border-style: none;
   background-color: #fb1;
@@ -111,17 +94,14 @@ img {
   width: 150px;
   border-radius: 2px;
 }
-
 .growup {
   display: flex;
   align-items: flex-end;
   justify-content: flex-end;
 }
-
 .growup img {
   height: 400px;
 }
-
 /* Sobre */
 
 .sobre,
@@ -129,7 +109,6 @@ img {
   background-color: #eee;
   padding: 60px 20px;
 }
-
 .titulo {
   font-size: 34px;
   margin-left: 30px;
@@ -138,7 +117,6 @@ img {
   padding-bottom: 5px;
   width: 40px;
 }
-
 .sobre img {
   height: 300px;
 }
@@ -147,43 +125,35 @@ img {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
-
 .foto {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
 .Containercard {
   height: auto;
 }
-
 .Containercard h2 {
   margin: 30px 0px;
 }
-
 .card {
   background-color: white;
   margin-top: 15px;
   box-shadow: 1px 2px 5px rgba(51, 51, 51, 0.144);
   padding-bottom: 10px;
 }
-
 .card:nth-of-type(2) h2 {
   background-color: #fb1;
   color: #333;
 }
-
 .card:nth-of-type(2) a {
   background-color: #333;
   color: #fb1;
 }
-
 .card:nth-of-type(2) a:hover {
   background-color: #fb1;
   color: #333;
 }
-
 .card h2 {
   background-color: #333;
   color: white;
@@ -191,14 +161,12 @@ img {
   border-radius: 0px 5px 5px 0px;
   padding: 0px 10px;
 }
-
 .card p {
   line-height: 1.4em;
   font-weight: 400;
   padding: 0px 10px;
   margin: 10px 0px;
 }
-
 .card a {
   background-color: #fb1;
   padding: 10px 5px;
@@ -212,7 +180,6 @@ img {
   margin-left: 20px;
   border-radius: 5px;
 }
-
 .card a:hover {
   background-color: #333;
   color: #fb1;
@@ -222,21 +189,17 @@ img {
 .categoria {
   padding: 30px 20px;
 }
-
 .containerGrid p {
   max-width: 430px;
 }
-
 .containerGrid img {
   height: 300px;
 }
-
 .containerGrid {
   display: grid;
   grid-template-columns: 450px 1fr;
   padding: 0px 20px;
 }
-
 .cardCont {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -244,13 +207,11 @@ img {
 
   height: 100%;
 }
-
 .cardCat {
   background-color: white;
   height: 205px;
   box-shadow: 2px 5px 5px rgba(51, 51, 51, 0.185);
 }
-
 .cardCat p {
   width: 100%;
   font-size: 12px;
@@ -264,48 +225,40 @@ img {
   color: white;
   border-radius: 50%;
 }
-
 .cardCat h3 {
   margin: 5px;
   letter-spacing: 1px;
 }
-
 .cardCat h4 {
   margin: 10px;
   font-weight: 300;
   letter-spacing: 1px;
 }
-
 /* Assistencia */
 .assistencia {
   padding: 30px 20px;
 }
-
 .assistencia div {
   display: grid;
   grid-template-columns: 1.5fr 1fr;
 }
-
 .assistencia ul {
   list-style: none;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-
 .assistencia ul li {
   margin: 20px;
   width: 300px;
   font-size: 18px;
 }
-
 .assistencia ul li h5 {
   color: #333;
   letter-spacing: 1px;
   margin-bottom: 10px;
   font-size: 20px;
 }
-
 /* Footer */
 .ft h1 {
   font-size: 34px;
@@ -313,7 +266,6 @@ img {
   padding-bottom: 5px;
   align-self: flex-start;
 }
-
 .ft h1::after,
 .titulo::after {
   content: "";
@@ -323,14 +275,12 @@ img {
   height: 3px;
   background-color: #333;
 }
-
 .ft {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 20px;
 }
-
 .ft img {
   height: 350px;
 }
@@ -348,12 +298,10 @@ img {
   transition: 0.3s;
   width: 100px;
 }
-
 .ft a:hover {
   background-color: #333;
   color: #fb1;
 }
-
 .sobre,
 .categoria,
 .ft,
@@ -361,18 +309,15 @@ img {
   width: auto;
   height: auto;
 }
-
 .categoria,
 .assistencia {
   display: flex;
   flex-direction: column;
 }
-
 @media only screen and (max-width: 1170px) and (min-width: 912px) {
   .containerGrid p {
     max-width: 336px;
   }
-
   .cardCont {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -380,30 +325,25 @@ img {
 
     height: 100%;
   }
-
   .containerGrid {
     display: grid;
     grid-template-columns: 400px 1fr;
     padding: 0px 20px;
   }
 }
-
 @media only screen and (max-width: 912px) {
   .containerGrid img {
     height: 150px;
   }
-
   .cardCat {
     height: 235px;
   }
-
   .containerGrid {
     display: flex;
     flex-direction: column;
 
     padding: 0px 20px;
   }
-
   .cardCont {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -411,36 +351,29 @@ img {
     height: 100%;
   }
 }
-
 @media only screen and (max-width: 950px) {
   .infoIntro {
     height: 440px;
   }
-
   .containerSobre {
     display: grid;
     grid-template-columns: 1fr;
   }
-
   .headerHome {
     padding: 0px 0px;
   }
-
   .infoIntro p {
     width: 400px;
     font-size: 18px;
   }
-
   .growup img {
     max-height: 200px;
   }
 }
-
 @media only screen and (max-width: 650px) {
   .headerHome {
     padding: 0px 0px;
   }
-
   .infoIntro {
     display: grid;
     grid-template-columns: 1fr;
@@ -455,7 +388,6 @@ img {
     width: 100%;
     text-align: center;
   }
-
   .headerHome div {
     display: initial;
     z-index: 100;
@@ -463,7 +395,6 @@ img {
     padding: 10px;
     position: fixed;
   }
-
   .navebarHome {
     background-color: white;
     box-shadow: 5px 0px 5px rgba(51, 51, 51, 0.137);
@@ -478,18 +409,15 @@ img {
     transition: 0.3s;
     transform: translateX(-800px);
   }
-
   .navebarHome.ativo {
     transform: translateX(0px);
   }
-
   .navebarHome ul {
     display: flex;
     flex-direction: column;
     width: 100%;
     text-align: center;
   }
-
   .navebarHome ul a {
     margin: 5vh 0px;
   }

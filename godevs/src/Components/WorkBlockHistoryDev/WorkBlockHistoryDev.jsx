@@ -4,7 +4,7 @@ import Moment from "react-moment";
 import WorkService from "../../Services/WorkService";
 
 const WorkBlockHistoryDev = ({ item }) => {
-    console.log(item)
+  console.log(item);
   return (
     <div
       style={{
@@ -51,16 +51,22 @@ const WorkBlockHistoryDev = ({ item }) => {
       </div>
       {!item.aprovado ? (
         !item.finalizado ? (
-          <Button
-            onClick={() => {
-              const service = new WorkService();
-              service.attFinalizado(item.id_work);
-            }}
-            size="medium"
-            variant="contained"
-          >
-            Finalizar
-          </Button>
+          !item.dev_aprovado ? (
+            <Typography sx={{ textAlign: "center", color: "primary.gray" }}>
+              Você se candidatou a esse trabalho.
+            </Typography>
+          ) : (
+            <Button
+              onClick={() => {
+                const service = new WorkService();
+                service.attFinalizado(item.id_work);
+              }}
+              size="medium"
+              variant="contained"
+            >
+              Finalizar
+            </Button>
+          )
         ) : (
           <Typography sx={{ textAlign: "center", color: "primary.gray" }}>
             Aguardando Aprovação.

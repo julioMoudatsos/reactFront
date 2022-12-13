@@ -1,0 +1,25 @@
+$yellow : #FEC63E;
+
+.left {
+    height: 100vh;
+    width: 55vw;
+    background-color: $yellow ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+        margin-bottom: 10px;
+        height: 120px;
+    }
+
+}
+
+
+@media (max-width: 920px)
+{
+  .left
+   {
+    display: none;
+   }
+}

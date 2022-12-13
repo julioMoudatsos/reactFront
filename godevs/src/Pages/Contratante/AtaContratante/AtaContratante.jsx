@@ -6,7 +6,7 @@ import InfoUserService from '../../../Services/InfoUserService';
 import './ata.css';
 export const AtaContratante = () => {
   const [projetos, setProjetos] = React.useState(false);
-  const [id, setId] = React.useState(localStorage.getItem('idCont'));
+  const [id] = React.useState(localStorage.getItem('idCont'));
   const [download, setDownload] = React.useState(false);
   const [count, setCount] = React.useState(0);
   const [modalAtas, setModalAtas] = React.useState(false);
