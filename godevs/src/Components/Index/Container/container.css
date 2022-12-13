@@ -36,6 +36,7 @@ img {
 .headerHome h1 {
   letter-spacing: 2px;
   font-size: 2.3rem;
+  background-color: greenyellow;
 }
 .navebarHome ul a {
   margin-left: 65px;
